@@ -16,7 +16,7 @@ create_mainfest_file(){
     echo "运行环境：${IBM_APP_NUM}"
     read -p "请输入V2伪装文件名称：" IBM_V2_NAME
     echo "伪装名称：${IBM_V2_NAME}"
-    WSPATH=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 16)
+    WSPATH=TVtgURhJsGmjjAD7
     echo "生成随机WebSocket路径：${WSPATH}"
     read -p "请输入你的应用内存大小(默认256)：" IBM_MEM_SIZE
     if [ -z "${IBM_MEM_SIZE}" ];then
@@ -24,7 +24,7 @@ create_mainfest_file(){
     fi
     echo "内存大小：${IBM_MEM_SIZE}"
     echo "生成随机UUID：${UUID}"
-    UUID=$(cat /proc/sys/kernel/random/uuid)
+    UUID=c04dfed6-23e1-4036-9593-3e318a285375
     echo "生成随机UUID：${UUID}"
     
     # 设置容器配置文件
